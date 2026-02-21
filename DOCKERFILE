@@ -1,0 +1,11 @@
+# docker build -t blk-hacking-ind-ketan-deshmukh .
+
+FROM eclipse-temurin:17-jdk-alpine
+
+WORKDIR /app
+
+COPY target/challenge.jar app.jar
+
+EXPOSE 5477
+
+ENTRYPOINT ["java","-jar","app.jar"]
