@@ -3,12 +3,15 @@ package blackrock.challenge.investment.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import blackrock.challenge.investment.dto.Expenses;
 import blackrock.challenge.investment.dto.ReturnRequest;
 import blackrock.challenge.investment.dto.ReturnResponse;
 import blackrock.challenge.investment.dto.SavingsByDate;
 import blackrock.challenge.investment.dto.Transactions;
 
+@Service
 public class TransactionService {
 
 	private static final double NPS_RATE = 0.0711;
